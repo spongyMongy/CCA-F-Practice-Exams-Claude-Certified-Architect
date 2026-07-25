@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.rememberNavController
 import com.arslan.ccafprep.data.local.SettingsManager
 import com.arslan.ccafprep.domain.model.theme.AppTheme
@@ -23,6 +24,7 @@ import com.arslan.ccafprep.domain.model.theme.BackgroundStyle
 import com.arslan.ccafprep.presentation.navigation.MainScaffold
 import com.arslan.ccafprep.ui.theme.CcafPrepTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -34,6 +36,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        lifecycleScope.launch {
+            settingsManager.setProUnlocked(true)
+            settingsManager.setTheme(AppTheme.SUNSET)
+            settingsManager.setBackgroundStyle(BackgroundStyle.MESH)
+        }
 
         setContent {
             val theme by settingsManager.selectedTheme.collectAsState(initial = AppTheme.DEFAULT)
