@@ -66,7 +66,7 @@ com.arslan.ccafprep/
 - [x] Phase 6 — Progress dashboard
 - [x] Phase 7 — Play Billing one-time purchase
 - [x] Phase 8 — Final Polish & Compliance Verification (Mocks & Debug Toggles Removed)
-- [x] Phase 9 — Deployment Ready
+- [x] Phase 9 — Deployment Ready (Privacy Policy Hosted & Linked)
 
 ## What NOT to do
 - Don't regenerate whole files when a small edit will do — ask for diffs.
