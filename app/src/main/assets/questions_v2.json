@@ -1,0 +1,2732 @@
+[
+  {
+    "id": "d1_q1",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is the primary role of an 'Orchestrator' in a multi-agent system?",
+    "options": [
+      "Database management",
+      "Executing low-level code",
+      "Decomposing goals and routing tasks",
+      "UI design"
+    ],
+    "correctIndex": 2,
+    "explanation": "Orchestrators manage the high-level logic of breaking down user requests into sub-tasks for specialized agents."
+  },
+  {
+    "id": "d1_q2",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Swarm' architecture, how do agents communicate?",
+    "options": [
+      "They don't communicate",
+      "Peer-to-peer hand-offs",
+      "Broadcast to all agents",
+      "Through a central hub"
+    ],
+    "correctIndex": 1,
+    "explanation": "Swarm architectures are decentralized and rely on direct hand-offs between agents."
+  },
+  {
+    "id": "d1_q3",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "Which pattern is most effective for a task requiring high-precision self-correction?",
+    "options": [
+      "Linear Chain",
+      "Single-shot prompting",
+      "Evaluator-Optimizer Loop",
+      "Parallel Execution"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Evaluator-Optimizer loop involves an iterative process of critique and refinement."
+  },
+  {
+    "id": "d1_q4",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What does 'HITL' stand for in agentic design?",
+    "options": [
+      "Heuristic Internal Task Logic",
+      "Hostile Intent Tool List",
+      "High Intensity Task Loop",
+      "Human-in-the-Loop"
+    ],
+    "correctIndex": 3,
+    "explanation": "Human-in-the-Loop is a safety and quality pattern where humans review or approve agent actions."
+  },
+  {
+    "id": "d1_q5",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is the primary risk of a recursive agentic loop without a stop condition?",
+    "options": [
+      "Data corruption",
+      "Infinite token consumption and cost",
+      "The model becoming self-aware",
+      "Hardware failure"
+    ],
+    "correctIndex": 1,
+    "explanation": "Unbounded loops can result in massive API costs and stuck processes."
+  },
+  {
+    "id": "d1_q6",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In the 'Plan-and-Execute' pattern, what is the 'Planner' responsible for?",
+    "options": [
+      "Summarizing results",
+      "Creating a task roadmap",
+      "User authentication",
+      "Running shell commands"
+    ],
+    "correctIndex": 1,
+    "explanation": "The planner decomposes the high-level goal into a set of executable steps."
+  },
+  {
+    "id": "d1_q7",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'Tool-use' (Function Calling)?",
+    "options": [
+      "Using a spreadsheet manually",
+      "Fixing a computer hardware issue",
+      "A model generating structured arguments to call external code",
+      "An LLM writing a poem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tool-use allows models to interact with APIs, databases, and files via structured outputs."
+  },
+  {
+    "id": "d1_q8",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "When using a 'Router' agent, what is the main selection criterion?",
+    "options": [
+      "Random selection",
+      "User intent classification",
+      "Round-robin load balancing",
+      "Model file size"
+    ],
+    "correctIndex": 1,
+    "explanation": "Routers classify the input to determine which specialized agent or tool is best suited for the task."
+  },
+  {
+    "id": "d1_q9",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In an agentic workflow, what is the primary purpose of an 'Evaluation' step before final output?",
+    "options": [
+      "To increase the token count",
+      "To switch models automatically",
+      "To verify the model's response against a set of predefined success criteria",
+      "To allow the model to browse the web"
+    ],
+    "correctIndex": 2,
+    "explanation": "Evaluation steps compare candidate output against requirements to ensure high-fidelity results."
+  },
+  {
+    "id": "d1_q10",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "Which multi-agent pattern is best suited for high-throughput, independent document processing?",
+    "options": [
+      "Single-agent reasoning",
+      "Parallel (Map-Reduce) Pattern",
+      "Sequential Chain",
+      "Interactive Chat Loop"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parallel processing allows independent agents to handle separate documents simultaneously."
+  },
+  {
+    "id": "d1_q11",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "When implementing a 'Router' agent, what is most critical in its system prompt?",
+    "options": [
+      "Clear descriptions of sub-agent specialties and triggers",
+      "Banned word list",
+      "User chat history",
+      "Full API docs"
+    ],
+    "correctIndex": 0,
+    "explanation": "A router needs precise logic to discriminate between different delegation options."
+  },
+  {
+    "id": "d1_q12",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Plan-and-Execute' architecture, what does the 'Planner' agent produce?",
+    "options": [
+      "Unit tests",
+      "Final answer",
+      "Marketing summary",
+      "A step-by-step sequence of sub-tasks for execution agents"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decomposition into manageable steps is the primary responsibility of the Planner."
+  },
+  {
+    "id": "d1_q13",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Tool-Call Latency' in agentic design?",
+    "options": [
+      "Human approval time",
+      "Delay between model generating a call and the application returning the result",
+      "Inference speed",
+      "Documentation time"
+    ],
+    "correctIndex": 1,
+    "explanation": "Overall latency in agentic loops includes external tool execution time."
+  },
+  {
+    "id": "d1_q14",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which component maintains 'State' in a multi-turn multi-agent conversation?",
+    "options": [
+      "GPU",
+      "Orchestrator or dedicated State Management layer",
+      "Vector Database",
+      "Tokenizer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Application layers must store and re-inject conversation history into the context window."
+  },
+  {
+    "id": "d1_q15",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "Why use a 'Small' model for a Router and a 'Large' model for specialized sub-agents?",
+    "options": [
+      "Large models can't route",
+      "Cost optimization for easier tasks while investing in hard logic",
+      "Small models reason better",
+      "Small models are more secure"
+    ],
+    "correctIndex": 1,
+    "explanation": "This optimizes the price-performance curve of the total system."
+  },
+  {
+    "id": "d1_q16",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Dynamic Routing' system, how are routing decisions updated?",
+    "options": [
+      "Daily manual updates",
+      "Real-time feedback loops from execution agents",
+      "Hard-coded rules",
+      "Random shuffling"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dynamic routing uses feedback to adjust how tasks are allocated based on current agent performance or state."
+  },
+  {
+    "id": "d1_q17",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is the main advantage of an 'Asynchronous' agentic workflow?",
+    "options": [
+      "Improved scalability for non-linear task dependencies",
+      "Zero latency",
+      "Lower token cost",
+      "Easier debugging"
+    ],
+    "correctIndex": 0,
+    "explanation": "Asynchronous flows allow independent tasks to proceed without blocking the entire pipeline."
+  },
+  {
+    "id": "d1_q18",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which design principle helps prevent 'Agentic Drift'?",
+    "options": [
+      "Higher temperature",
+      "Using more agents",
+      "Faster hardware",
+      "Strict instruction scoping and periodic state re-alignment"
+    ],
+    "correctIndex": 3,
+    "explanation": "Scoping ensures agents stay on task and don't deviate from their intended logic over long sessions."
+  },
+  {
+    "id": "d1_q19",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is the 'Hand-off' in a sequential agentic chain?",
+    "options": [
+      "File deletion",
+      "Passing the output of one agent as the input to the next",
+      "Model training",
+      "User logout"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hand-offs enable linear decomposition of tasks across specialized models."
+  },
+  {
+    "id": "d1_q20",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "In an 'Evaluator-Optimizer' loop, what defines the 'Stop Condition'?",
+    "options": [
+      "Random chance",
+      "User intervention only",
+      "Reaching a predefined quality threshold or maximum iteration count",
+      "Time limit"
+    ],
+    "correctIndex": 2,
+    "explanation": "Clear exit criteria prevent infinite loops and ensure output meets standards."
+  },
+  {
+    "id": "d1_q21",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is the primary role of a 'Registry' in a multi-agent system?",
+    "options": [
+      "Logging API errors",
+      "Storing user passwords",
+      "Maintaining a discoverable list of available tools and agent capabilities",
+      "Rendering UI"
+    ],
+    "correctIndex": 2,
+    "explanation": "A registry allows orchestrators to dynamically find and invoke the correct modules for a task."
+  },
+  {
+    "id": "d1_q22",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "Why is 'Reasoning Trace' visibility important for agentic systems?",
+    "options": [
+      "It isn't important",
+      "For debugging, auditability, and human verification of the model's logic",
+      "To make the UI look better",
+      "To increase inference speed"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exposing 'thinking' steps helps users trust and verify the agent's path to a solution."
+  },
+  {
+    "id": "d1_q23",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which pattern is most robust for handling intermittent API failures in a tool-use loop?",
+    "options": [
+      "Ignoring errors",
+      "Fail-fast",
+      "Exponential backoff and retry logic at the application layer",
+      "Switching models"
+    ],
+    "correctIndex": 2,
+    "explanation": "Robust agentic design must handle transient errors gracefully without crashing the workflow."
+  },
+  {
+    "id": "d1_q24",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is a 'DAG' in the context of agentic orchestration?",
+    "options": [
+      "Directed Acyclic Graph, representing task dependencies",
+      "Digital Asset Group",
+      "Data Access Gateway",
+      "Direct Agent Group"
+    ],
+    "correctIndex": 0,
+    "explanation": "DAGs allow orchestrators to execute complex, non-linear workflows with clear execution orders."
+  },
+  {
+    "id": "d1_q25",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Collaborative' agent system, what is 'Shared Memory'?",
+    "options": [
+      "GPU RAM",
+      "User hard drive",
+      "A common state store where all agents can read and write task context",
+      "The model's weights"
+    ],
+    "correctIndex": 2,
+    "explanation": "Shared state ensures all agents in a session are aligned on current progress and data."
+  },
+  {
+    "id": "d1_q26",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'Agency' in the context of LLM applications?",
+    "options": [
+      "Model size",
+      "A marketing firm",
+      "Price per token",
+      "The degree of autonomy a model has to use tools and execute actions"
+    ],
+    "correctIndex": 3,
+    "explanation": "High-agency systems can perform multi-step tasks with minimal human intervention."
+  },
+  {
+    "id": "d1_q27",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which architectural component is responsible for 'Token Budgeting' in complex loops?",
+    "options": [
+      "Tokenizer",
+      "Orchestrator/Application Controller",
+      "The LLM itself",
+      "Database"
+    ],
+    "correctIndex": 1,
+    "explanation": "The application layer must monitor and limit token usage to prevent cost overruns."
+  },
+  {
+    "id": "d1_q28",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Self-Reflection' in agentic logic?",
+    "options": [
+      "Model talking to itself",
+      "User feedback",
+      "A model reviewing its own output or plan and generating corrections",
+      "Logging"
+    ],
+    "correctIndex": 2,
+    "explanation": "Self-reflection steps allow models to find and fix errors before presenting a result."
+  },
+  {
+    "id": "d1_q29",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "How does 'Parallel' agent execution differ from 'Sequential' execution?",
+    "options": [
+      "It uses only one model",
+      "It is slower",
+      "Multiple agents work on independent sub-tasks simultaneously",
+      "It requires no tools"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallelism significantly reduces overall completion time for decomposable tasks."
+  },
+  {
+    "id": "d1_q30",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is a 'System Prompt' in agentic design?",
+    "options": [
+      "Foundational instructions that define the model's persona and operational boundaries",
+      "An error message",
+      "User's first message",
+      "A pop-up on the computer"
+    ],
+    "correctIndex": 0,
+    "explanation": "System prompts are the primary mechanism for configuring agent behavior and safety."
+  },
+  {
+    "id": "d1_q31",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Plan-and-Execute' flow, what happens if the 'Execute' phase fails?",
+    "options": [
+      "The user is logged out",
+      "The last step is repeated infinitely",
+      "The failure is reported back to the Planner to adjust the remaining roadmap",
+      "The app crashes"
+    ],
+    "correctIndex": 2,
+    "explanation": "Robust planners can re-plan or retry based on execution feedback."
+  },
+  {
+    "id": "d1_q32",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Contextual Grounding' in agentic orchestration?",
+    "options": [
+      "Using a faster model",
+      "Deleting the prompt",
+      "Ensuring model responses are strictly based on provided or retrieved data",
+      "Connecting to the earth"
+    ],
+    "correctIndex": 2,
+    "explanation": "Grounding prevents hallucinations by tying reasoning to factual evidence."
+  },
+  {
+    "id": "d1_q33",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which metric is most relevant for assessing 'Agent Reliability'?",
+    "options": [
+      "Model file size",
+      "RAM usage",
+      "Success rate of task completion without human intervention",
+      "Tokens per second"
+    ],
+    "correctIndex": 2,
+    "explanation": "Autonomous success rate is the gold standard for agentic system evaluation."
+  },
+  {
+    "id": "d1_q34",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'Multi-turn' conversation in an agent context?",
+    "options": [
+      "Deleting history",
+      "Rotating the model",
+      "A one-shot prompt",
+      "A back-and-forth exchange where the model maintains history"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multi-turn capability is essential for iterative problem-solving."
+  },
+  {
+    "id": "d1_q35",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Why use 'Structured Output' (e.g. JSON) for agent communication?",
+    "options": [
+      "Because LLMs like it better",
+      "To allow programmatic parsing and reliable tool invocation",
+      "To save space",
+      "To encrypt data"
+    ],
+    "correctIndex": 1,
+    "explanation": "Structure turns raw text into actionable data for the application layer."
+  },
+  {
+    "id": "d1_q36",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Semantic Routing'?",
+    "options": [
+      "Routing based on keyword match",
+      "Random routing",
+      "Routing based on the semantic meaning of input using embeddings",
+      "Routing based on user name"
+    ],
+    "correctIndex": 2,
+    "explanation": "Semantic routing is more flexible and accurate than simple keyword-based logic."
+  },
+  {
+    "id": "d1_q37",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is the primary benefit of 'Modular' agent design?",
+    "options": [
+      "Fewer models",
+      "Easier maintenance, testing, and independent upgrading of sub-agents",
+      "Faster inference",
+      "Lower cost"
+    ],
+    "correctIndex": 1,
+    "explanation": "Modularity allows developers to swap out or improve specific agent capabilities without rebuilding the entire system."
+  },
+  {
+    "id": "d1_q38",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'User Intent' in agentic design?",
+    "options": [
+      "A model parameter",
+      "The core goal or request the user wants to achieve",
+      "User's password",
+      "User's browser type"
+    ],
+    "correctIndex": 1,
+    "explanation": "Correctly identifying intent is the first step in successful task orchestration."
+  },
+  {
+    "id": "d1_q39",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which component typically handles 'Long-term Memory' in agents?",
+    "options": [
+      "Context Window",
+      "Model Weights",
+      "Vector Databases or External File Stores",
+      "System Prompt"
+    ],
+    "correctIndex": 2,
+    "explanation": "External storage allows agents to recall information from past sessions."
+  },
+  {
+    "id": "d1_q40",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Chain-of-Verification' (CoVe)?",
+    "options": [
+      "Model training method",
+      "A security protocol",
+      "A blockchain",
+      "A prompting technique where a model generates claims and then verifies them in separate steps"
+    ],
+    "correctIndex": 3,
+    "explanation": "CoVe reduces hallucinations by forcing the model to audit its own assertions."
+  },
+  {
+    "id": "d1_q41",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "In a 'Swarm' pattern, what is a 'Hand-off'?",
+    "options": [
+      "Deleting a tool",
+      "User logout",
+      "Model training",
+      "The current agent delegating control and context to another specialized agent"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hand-offs allow the system to dynamically transition between different expertise areas."
+  },
+  {
+    "id": "d1_q42",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'Latency' in an agentic workflow?",
+    "options": [
+      "Model name",
+      "Number of agents",
+      "Cost per token",
+      "The time delay between input and the final agent action/response"
+    ],
+    "correctIndex": 3,
+    "explanation": "Latency is a critical UX factor, especially in multi-step agentic loops."
+  },
+  {
+    "id": "d1_q43",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which technique is best for preventing 'Infinite Loops' in autonomous agents?",
+    "options": [
+      "Asking model to stop",
+      "Hard-coded iteration counters in the application controller",
+      "Lowering max tokens",
+      "Higher temperature"
+    ],
+    "correctIndex": 1,
+    "explanation": "The app layer must provide safeguards that the model cannot bypass."
+  },
+  {
+    "id": "d1_q44",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Prompt Chaining'?",
+    "options": [
+      "A list of prompts",
+      "Breaking a complex task into multiple API calls with intermediate results",
+      "Encryption",
+      "A long prompt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chaining allows for higher precision by focusing the model on one sub-task at a time."
+  },
+  {
+    "id": "d1_q45",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Observation' in a ReAct (Reason + Act) loop?",
+    "options": [
+      "The feedback or data returned from a tool after an action is taken",
+      "Watching the user",
+      "Logging",
+      "The model's thought process"
+    ],
+    "correctIndex": 0,
+    "explanation": "Observations provide the evidence the model needs to decide its next step."
+  },
+  {
+    "id": "d1_q46",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "Why use 'Temperature = 0' for agentic tool selection?",
+    "options": [
+      "To make the model colder",
+      "To ensure deterministic and repeatable behavior for logical routing",
+      "To save tokens",
+      "To increase speed"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zero temperature minimizes randomness, which is vital for structural logic."
+  },
+  {
+    "id": "d1_q47",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "Which component is responsible for 'Tool Result Formatting' for the model?",
+    "options": [
+      "The Tool itself",
+      "The Application/Orchestration layer",
+      "The Model",
+      "The User"
+    ],
+    "correctIndex": 1,
+    "explanation": "The app layer must translate raw API data into a format (like markdown or JSON) the model understands."
+  },
+  {
+    "id": "d1_q48",
+    "domainId": 1,
+    "difficulty": "HARD",
+    "text": "What is 'Hierarchical Orchestration'?",
+    "options": [
+      "Agents ordered by size",
+      "A top-level Manager agent delegating to specialized Sub-agents",
+      "A linear list of agents",
+      "Random delegation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hierarchies provide clear management structure for complex multi-domain tasks."
+  },
+  {
+    "id": "d1_q49",
+    "domainId": 1,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Reasoning Agent' vs. an 'Execution Agent'?",
+    "options": [
+      "Same thing",
+      "One is bigger",
+      "Reasoning agents plan/decide; Execution agents use tools/apply changes",
+      "One is faster"
+    ],
+    "correctIndex": 2,
+    "explanation": "Separating logic from action allows for specialized model selection and better control."
+  },
+  {
+    "id": "d1_q50",
+    "domainId": 1,
+    "difficulty": "EASY",
+    "text": "What is 'Human-in-the-Loop' (HITL) for destructive actions?",
+    "options": [
+      "Human writing the code",
+      "AI watching human",
+      "Human watching AI",
+      "Requiring human approval before the agent executes code that deletes or modifies data"
+    ],
+    "correctIndex": 3,
+    "explanation": "HITL is a critical safety guardrail for high-stakes agentic operations."
+  },
+  {
+    "id": "d2_q1",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "What is MCP?",
+    "options": [
+      "Model Context Protocol",
+      "Media Content Provider",
+      "Multi-core Processing",
+      "Main Control Program"
+    ],
+    "correctIndex": 0,
+    "explanation": "MCP is Anthropic's open standard for connecting AI models to data and tools."
+  },
+  {
+    "id": "d2_q2",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Resource' in the MCP specification?",
+    "options": [
+      "A UI component",
+      "A tool that deletes files",
+      "A read-only data source like a file or database entry",
+      "Hardware component"
+    ],
+    "correctIndex": 2,
+    "explanation": "Resources provide the context (data) that the model can read but not execute."
+  },
+  {
+    "id": "d2_q3",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "Which transport is standard for local MCP servers?",
+    "options": [
+      "FTP",
+      "Stdio (Standard Input/Output)",
+      "HTTP/3",
+      "Bluetooth"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stdio is the simplest and most common transport for local MCP processes."
+  },
+  {
+    "id": "d2_q4",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "In MCP, what is a 'Tool'?",
+    "options": [
+      "Executable function that can have side effects",
+      "Prompt template",
+      "Read-only log",
+      "UI button"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tools represent actions (functions) the model can trigger in external systems."
+  },
+  {
+    "id": "d2_q5",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "What protocol does MCP use for internal messaging?",
+    "options": [
+      "XML",
+      "JSON-RPC",
+      "Protocol Buffers",
+      "CSV"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCP uses JSON-RPC for structured request and response messaging."
+  },
+  {
+    "id": "d2_q6",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "Which transport is prioritized for real-time MCP status updates?",
+    "options": [
+      "SSE (Server-Sent Events)",
+      "REST POST",
+      "GraphQL",
+      "Email"
+    ],
+    "correctIndex": 0,
+    "explanation": "SSE allows for streaming 'Thinking...' status tokens in real-time."
+  },
+  {
+    "id": "d2_q7",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "What is an 'MCP Client'?",
+    "options": [
+      "The application hosting the model (e.g., Claude Desktop)",
+      "Database",
+      "A customer",
+      "Server"
+    ],
+    "correctIndex": 0,
+    "explanation": "The client orchestrates the connection between the model and the MCP server."
+  },
+  {
+    "id": "d2_q8",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "When an MCP server exposes a 'Prompt' resource, how is it consumed?",
+    "options": [
+      "Executed as code",
+      "Retrieved and populated with arguments before sending to the model",
+      "Read-only only",
+      "Sent automatically"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCP Prompts are templates that the client mediates for the model."
+  },
+  {
+    "id": "d2_q9",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "How do MCP servers declare capabilities to the client?",
+    "options": [
+      "Through listTools and listResources discovery endpoints",
+      "Printed manual",
+      "Automatic scanning",
+      "Email to Anthropic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Capability discovery allows the client to understand available actions."
+  },
+  {
+    "id": "d2_q10",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is the 'Principle of Least Privilege' in MCP server design?",
+    "options": [
+      "Scoping access to only the necessary directories or data",
+      "Using default admin passwords",
+      "Granting root access",
+      "Disabling logs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Restricting access prevents accidental or malicious data loss."
+  },
+  {
+    "id": "d2_q11",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "What is a 'Sampling' request from an MCP server?",
+    "options": [
+      "API cost reduction",
+      "Test of model speed",
+      "Data collection",
+      "Request for the model to generate a completion for the server"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sampling allows servers to leverage model intelligence for specialized sub-tasks."
+  },
+  {
+    "id": "d2_q12",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What happens when an MCP tool call fails?",
+    "options": [
+      "User logout",
+      "Computer crash",
+      "Error message returned to model as context for reasoning",
+      "Model stops working"
+    ],
+    "correctIndex": 2,
+    "explanation": "Graceful error handling allows the agentic loop to continue or retry."
+  },
+  {
+    "id": "d2_q13",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "Which language is typically used to implement MCP servers?",
+    "options": [
+      "Only Kotlin",
+      "Any language that supports JSON-RPC and transport (Node, Python, Go)",
+      "Only Python",
+      "Assembly"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCP is language-agnostic, relying on the JSON-RPC standard."
+  },
+  {
+    "id": "d2_q14",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is an 'MCP Root'?",
+    "options": [
+      "Main server process",
+      "A directory or resource boundary defined in config",
+      "Top level of database",
+      "Root user access"
+    ],
+    "correctIndex": 1,
+    "explanation": "Roots define the security boundaries for client-server interaction."
+  },
+  {
+    "id": "d2_q15",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "Can an MCP server handle 'Progress' updates for long tasks?",
+    "options": [
+      "No",
+      "Only for Claude 3.7",
+      "Only for file uploads",
+      "Yes, using the progress notification mechanism in the spec"
+    ],
+    "correctIndex": 3,
+    "explanation": "The MCP spec includes mechanisms for notifying clients of long-running task status."
+  },
+  {
+    "id": "d2_q16",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "In MCP, what is a 'Resource Template'?",
+    "options": [
+      "A parameterized URI that allows dynamic resource access (e.g. logs/{date})",
+      "A UI theme",
+      "A database schema",
+      "A model prompt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Templates allow clients to access a range of similar resources via variables."
+  },
+  {
+    "id": "d2_q17",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "What is the primary benefit of MCP for developers?",
+    "options": [
+      "Smaller model files",
+      "Free API tokens",
+      "Standardized way to connect tools/data to models without custom integration code for every LLM",
+      "Faster internet speed"
+    ],
+    "correctIndex": 2,
+    "explanation": "MCP provides a 'write once, use everywhere' interface for model-tool interaction."
+  },
+  {
+    "id": "d2_q18",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "How does MCP handle 'Authentication' for remote servers?",
+    "options": [
+      "Client-side proxying or bearer tokens in the transport header",
+      "Username only",
+      "Model password",
+      "It doesn't"
+    ],
+    "correctIndex": 0,
+    "explanation": "Secure transport is the client's responsibility, often handled via headers or environment variables."
+  },
+  {
+    "id": "d2_q19",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Prompt' in the MCP specification?",
+    "options": [
+      "A UI button",
+      "A server-defined instruction set that the client can request",
+      "An error",
+      "A user message"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCP Prompts allow servers to provide domain-specific instructions back to the model."
+  },
+  {
+    "id": "d2_q20",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "Can multiple MCP servers be connected to a single client?",
+    "options": [
+      "Only 2",
+      "Only if they are the same language",
+      "Yes, clients can aggregate tools and resources from many servers",
+      "No"
+    ],
+    "correctIndex": 2,
+    "explanation": "Clients act as hubs, unifying context from a diverse ecosystem of MCP providers."
+  },
+  {
+    "id": "d2_q21",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Discovery' in MCP?",
+    "options": [
+      "The process of the client querying the server for its list of tools, resources, and prompts",
+      "Searching the web",
+      "Debugging",
+      "Finding new models"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discovery happens at startup to populate the client's available action registry."
+  },
+  {
+    "id": "d2_q22",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "In MCP, what is the 'Lifecycle Management' responsibility of the client?",
+    "options": [
+      "Paying for tokens",
+      "Starting and stopping server processes and managing transport health",
+      "Training the model",
+      "Writing documentation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Clients manage the underlying server instances, especially for local stdio-based servers."
+  },
+  {
+    "id": "d2_q23",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Notification' in MCP?",
+    "options": [
+      "A one-way message from server to client (e.g. resource changed)",
+      "A model response",
+      "An error",
+      "A phone alert"
+    ],
+    "correctIndex": 0,
+    "explanation": "Notifications allow servers to update clients without a direct request-response cycle."
+  },
+  {
+    "id": "d2_q24",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "What is the purpose of the 'mcp.json' config file?",
+    "options": [
+      "User settings",
+      "Store model weights",
+      "Configure the list of servers the client should launch and their arguments",
+      "List of prompts"
+    ],
+    "correctIndex": 2,
+    "explanation": "mcp.json is the primary way to define the agent's external capabilities."
+  },
+  {
+    "id": "d2_q25",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "How does 'Tool Input Schema' work in MCP?",
+    "options": [
+      "Raw text",
+      "CSV",
+      "XML",
+      "JSON Schema defining the expected arguments for a tool call"
+    ],
+    "correctIndex": 3,
+    "explanation": "JSON Schema ensures the model generates correctly formatted arguments for the server."
+  },
+  {
+    "id": "d2_q26",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is the difference between a 'Tool' and a 'Resource'?",
+    "options": [
+      "Tools are executable actions; Resources are read-only data",
+      "Tools are read-only",
+      "Resources have side effects",
+      "No difference"
+    ],
+    "correctIndex": 0,
+    "explanation": "This distinction helps the model understand what it can change vs. what it can only see."
+  },
+  {
+    "id": "d2_q27",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "Which company introduced the MCP standard?",
+    "options": [
+      "OpenAI",
+      "Microsoft",
+      "Google",
+      "Anthropic"
+    ],
+    "correctIndex": 3,
+    "explanation": "Anthropic launched MCP to foster an open ecosystem for model-tool interoperability."
+  },
+  {
+    "id": "d2_q28",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "What is 'Sampling Control' in MCP?",
+    "options": [
+      "Controlling model temp",
+      "Token limit",
+      "A UI feature",
+      "The client's ability to restrict which models or parameters a server can request for sampling"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sampling control ensures the client remains in charge of safety and cost when servers request model generation."
+  },
+  {
+    "id": "d2_q29",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Transport Error' handling in MCP?",
+    "options": [
+      "Deleting server",
+      "Ignoring it",
+      "Detecting JSON-RPC parsing or connection issues and notifying the model/user",
+      "Restarting computer"
+    ],
+    "correctIndex": 2,
+    "explanation": "Robust transport handling prevents the model from hanging on failed tool calls."
+  },
+  {
+    "id": "d2_q30",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "Can MCP be used for web-based tools?",
+    "options": [
+      "Only local files",
+      "Only for Claude.ai",
+      "Yes, using HTTP/SSE or WebSocket transports",
+      "No"
+    ],
+    "correctIndex": 2,
+    "explanation": "MCP is flexible across both local and network-based tool providers."
+  },
+  {
+    "id": "d2_q31",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Capability Negotiation' in MCP?",
+    "options": [
+      "Asking for a raise",
+      "Client and server agreeing on which version and features of the protocol to use",
+      "Buying tokens",
+      "Model training"
+    ],
+    "correctIndex": 1,
+    "explanation": "Negotiation ensures backwards compatibility as the MCP spec evolves."
+  },
+  {
+    "id": "d2_q32",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "In MCP, how is 'Binary Data' (like images) typically handled?",
+    "options": [
+      "It isn't supported",
+      "Base64 encoding within the JSON-RPC payload with appropriate MIME types",
+      "External links only",
+      "As raw text"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCP supports multi-modal data transfer via standard encoding patterns."
+  },
+  {
+    "id": "d2_q33",
+    "domainId": 2,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Server-Sent Events' (SSE) used for in MCP?",
+    "options": [
+      "Browser cookies",
+      "A streaming transport for remote MCP servers",
+      "Sending emails",
+      "UI updates only"
+    ],
+    "correctIndex": 1,
+    "explanation": "SSE is ideal for unidirectional data streams from server to client."
+  },
+  {
+    "id": "d2_q34",
+    "domainId": 2,
+    "difficulty": "EASY",
+    "text": "What is the 'Claude Desktop' role in MCP?",
+    "options": [
+      "A text editor",
+      "An MCP Client that can host many local and remote servers",
+      "A model",
+      "A database"
+    ],
+    "correctIndex": 1,
+    "explanation": "Claude Desktop is one of the primary implementations of an MCP Client."
+  },
+  {
+    "id": "d2_q35",
+    "domainId": 2,
+    "difficulty": "HARD",
+    "text": "What is 'Tool-Call Interception'?",
+    "options": [
+      "The client reviewing or modifying a model's tool call before sending it to the server",
+      "Security bug",
+      "Stopping the model",
+      "Random failure"
+    ],
+    "correctIndex": 0,
+    "explanation": "Interception allows clients to apply safety filters or human-in-the-loop approvals."
+  },
+  {
+    "id": "d3_q1",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is 'Claude Code'?",
+    "options": [
+      "Web browser",
+      "Video game",
+      "An agentic CLI tool for engineering",
+      "A programming language"
+    ],
+    "correctIndex": 2,
+    "explanation": "Claude Code acts as an agentic coding partner in the terminal."
+  },
+  {
+    "id": "d3_q2",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Which file defines technical conventions for Claude Code?",
+    "options": [
+      "README.md",
+      "conventions.txt",
+      "CLAUDE.md",
+      "CONTRIBUTING.md"
+    ],
+    "correctIndex": 2,
+    "explanation": "CLAUDE.md stores persistent rules and architectural guides for the agent."
+  },
+  {
+    "id": "d3_q3",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "How do you initiate Claude Code in a workspace?",
+    "options": [
+      "Type 'claude'",
+      "Open website",
+      "Send an email",
+      "Create file"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 'claude' command starts the interactive agentic session."
+  },
+  {
+    "id": "d3_q4",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Where is the best place to enforce a 'Service Layer' pattern for Claude Code?",
+    "options": [
+      "Individual prompts",
+      "Cannot be enforced",
+      "Conventions section of CLAUDE.md",
+      "File renaming"
+    ],
+    "correctIndex": 2,
+    "explanation": "CLAUDE.md serves as the architectural source of truth for the agent."
+  },
+  {
+    "id": "d3_q5",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "Which command in Claude Code maps out project structure?",
+    "options": [
+      "/ls",
+      "/search",
+      "/compact",
+      "/init"
+    ],
+    "correctIndex": 0,
+    "explanation": "/ls allows the agent to visualize the file hierarchy."
+  },
+  {
+    "id": "d3_q6",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "How does Claude Code handle 'Context Pruning'?",
+    "options": [
+      "Upgrades model",
+      "Stops responding",
+      "Deletes files",
+      "Summarizes previous turns to fit window limits"
+    ],
+    "correctIndex": 3,
+    "explanation": "Summarization allows for long-running sessions across large codebases."
+  },
+  {
+    "id": "d3_q7",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Can Claude Code independently execute terminal commands?",
+    "options": [
+      "Only in safe mode",
+      "Only on Linux",
+      "No",
+      "Yes, to run tests, verify code, and search files"
+    ],
+    "correctIndex": 3,
+    "explanation": "Agency allows the tool to use standard terminal utilities to fulfill goals."
+  },
+  {
+    "id": "d3_q8",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is the purpose of '.claudeignore'?",
+    "options": [
+      "Hide sensitive or irrelevant files from the agent",
+      "Ignore model",
+      "Delete files",
+      "Speed up app"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ignore files ensure security and focus by scoping the agent's view."
+  },
+  {
+    "id": "d3_q9",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "How does Claude Code handle failed test runs?",
+    "options": [
+      "Quits immediately",
+      "Analyzes error output and attempts to fix the code",
+      "Bans the user",
+      "Restarts computer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iterative observation and correction is a core agentic capability."
+  },
+  {
+    "id": "d3_q10",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Is Claude Code capable of Git integration?",
+    "options": [
+      "Only on GitHub",
+      "Yes, it can stage and commit changes with messages",
+      "Only for private repos",
+      "No"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrated version control management streamlines the agentic workflow."
+  },
+  {
+    "id": "d3_q11",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What is '/compact' used for in Claude Code?",
+    "options": [
+      "Compressing images",
+      "Smaller font",
+      "Reducing conversation history tokens manually",
+      "Zipping files"
+    ],
+    "correctIndex": 2,
+    "explanation": "Token management is critical for staying within model context limits."
+  },
+  {
+    "id": "d3_q12",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "Can Claude Code be used for refactoring?",
+    "options": [
+      "No",
+      "Yes, it can analyze dependencies and apply changes across files",
+      "Only for Java",
+      "Only for UI"
+    ],
+    "correctIndex": 1,
+    "explanation": "Agentic reasoning enables complex multi-file modifications."
+  },
+  {
+    "id": "d3_q13",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "What does '/search' do in Claude Code?",
+    "options": [
+      "Web search",
+      "Perform regex or text search across the project files",
+      "Search for help",
+      "Search for users"
+    ],
+    "correctIndex": 1,
+    "explanation": "/search allows the agent to find specific patterns in the codebase."
+  },
+  {
+    "id": "d3_q14",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "How does Claude Code 'Verify' its work?",
+    "options": [
+      "It doesn't",
+      "By running defined test commands and checking exit codes",
+      "By checking file size",
+      "By asking the user"
+    ],
+    "correctIndex": 1,
+    "explanation": "Verification is a key step in reliable agentic autonomous operation."
+  },
+  {
+    "id": "d3_q15",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Can Claude Code handle multiple files at once?",
+    "options": [
+      "No",
+      "Only in root",
+      "Yes, it can read and write to multiple files in a single turn",
+      "Only 2 files"
+    ],
+    "correctIndex": 2,
+    "explanation": "Modern agentic tools can manage complex multi-file contexts."
+  },
+  {
+    "id": "d3_q16",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "What is the primary benefit of using Claude Code over a standard Chat interface?",
+    "options": [
+      "Lower cost",
+      "Faster typing",
+      "Better models",
+      "Direct agency over files and terminal for a closed-loop engineering workflow"
+    ],
+    "correctIndex": 3,
+    "explanation": "Agency allows the tool to act, not just suggest, reducing manual copy-pasting."
+  },
+  {
+    "id": "d3_q17",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "How do you document a 'Style Guide' for Claude Code?",
+    "options": [
+      "In code comments only",
+      "In the 'Conventions' or 'Architecture' section of CLAUDE.md",
+      "By telling it every time",
+      "In a Word doc"
+    ],
+    "correctIndex": 1,
+    "explanation": "CLAUDE.md provides a persistent context that the agent reads at the start of sessions."
+  },
+  {
+    "id": "d3_q18",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is the command to run a 'One-off' task in Claude Code from the terminal?",
+    "options": [
+      "run claude",
+      "claude \"fix the typo in login.js\"",
+      "claude --task",
+      "claude execute"
+    ],
+    "correctIndex": 1,
+    "explanation": "The CLI supports passing a task directly as a string for quick edits."
+  },
+  {
+    "id": "d3_q19",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Does Claude Code support 'Custom Tools'?",
+    "options": [
+      "Yes, it can use any MCP server configured in the environment",
+      "Only if written in JS",
+      "No",
+      "Only built-in ones"
+    ],
+    "correctIndex": 0,
+    "explanation": "Claude Code leverages the MCP ecosystem to expand its capabilities."
+  },
+  {
+    "id": "d3_q20",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What happens when Claude Code encounters a 'Merge Conflict'?",
+    "options": [
+      "It asks the user to fix it first",
+      "It deletes the file",
+      "It quits",
+      "It can analyze both versions and attempt to resolve the conflict logically"
+    ],
+    "correctIndex": 3,
+    "explanation": "Advanced reasoning allows agentic tools to manage complex Git states."
+  },
+  {
+    "id": "d3_q21",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is 'Interactive Mode' in Claude Code?",
+    "options": [
+      "A game",
+      "A persistent session where you can have a dialogue with the agent",
+      "Model training",
+      "Watching a movie"
+    ],
+    "correctIndex": 1,
+    "explanation": "Interactive mode allows for collaborative problem-solving and guidance."
+  },
+  {
+    "id": "d3_q22",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "How do you prevent Claude Code from reading 'node_modules'?",
+    "options": [
+      "It doesn't read it anyway",
+      "Add 'node_modules/' to .claudeignore",
+      "Tell it in the prompt",
+      "Delete the folder"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ignore files are critical for keeping the agent's context clean and performant."
+  },
+  {
+    "id": "d3_q23",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What is the purpose of '/bug' in some Claude Code implementations?",
+    "options": [
+      "To report a bug to Anthropic",
+      "To add a bug",
+      "To trigger a specific debugging and root-cause analysis workflow",
+      "To crash the app"
+    ],
+    "correctIndex": 2,
+    "explanation": "Specialized commands can focus the agent's reasoning on specific engineering patterns."
+  },
+  {
+    "id": "d3_q24",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Can Claude Code handle 'Large Refactors' across 50+ files?",
+    "options": [
+      "No",
+      "Only for Python",
+      "Yes, by breaking the task into smaller sub-tasks and iterating",
+      "Only if the files are small"
+    ],
+    "correctIndex": 2,
+    "explanation": "Agentic decomposition is key to managing large-scale architectural changes."
+  },
+  {
+    "id": "d3_q25",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "Which model does Claude Code typically use for best performance?",
+    "options": [
+      "Claude 3.5 Sonnet or 3.7 Sonnet",
+      "Claude 1",
+      "GPT-4",
+      "Claude 3 Haiku"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sonnet-class models provide the best balance of reasoning and speed for coding."
+  },
+  {
+    "id": "d3_q26",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "How does Claude Code handle 'Environment Variables'?",
+    "options": [
+      "It only accesses variables explicitly allowed or passed via MCP",
+      "It creates new ones",
+      "It reads all of them",
+      "It doesn't"
+    ],
+    "correctIndex": 0,
+    "explanation": "Security scoping ensures sensitive data isn't leaked into the model context accidentally."
+  },
+  {
+    "id": "d3_q27",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Incremental Verification'?",
+    "options": [
+      "Checking everything at the end",
+      "Manual verification",
+      "Zero verification",
+      "Running tests after every small change to ensure no regressions"
+    ],
+    "correctIndex": 3,
+    "explanation": "Claude Code's agency allows it to self-correct by checking its work as it goes."
+  },
+  {
+    "id": "d3_q28",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is the output of '/help' in Claude Code?",
+    "options": [
+      "The model's name",
+      "API docs",
+      "A joke",
+      "A list of available slash commands and usage tips"
+    ],
+    "correctIndex": 3,
+    "explanation": "Slash commands provide a quick way to manage the agentic session."
+  },
+  {
+    "id": "d3_q29",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "How do you teach Claude Code a 'New Library'?",
+    "options": [
+      "Model training",
+      "Pointing it to the library's documentation files via MCP or local files",
+      "You can't",
+      "Writing it for the agent"
+    ],
+    "correctIndex": 1,
+    "explanation": "Providing documentation in-context is the most effective way to expand agent knowledge."
+  },
+  {
+    "id": "d3_q30",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Does Claude Code support 'Docker'?",
+    "options": [
+      "No",
+      "Only for web apps",
+      "Only on Mac",
+      "Yes, it can execute docker commands if the host terminal permits"
+    ],
+    "correctIndex": 3,
+    "explanation": "Terminal agency extends to container orchestration and local dev environments."
+  },
+  {
+    "id": "d3_q31",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is a 'Session' in Claude Code?",
+    "options": [
+      "A file",
+      "A user account",
+      "A model weight",
+      "A single continuous interaction until the process exits"
+    ],
+    "correctIndex": 3,
+    "explanation": "Context is maintained within a session but typically reset when the CLI is closed."
+  },
+  {
+    "id": "d3_q32",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What is 'Diff Management' in agentic coding?",
+    "options": [
+      "Finding differences in files",
+      "Deleting old code",
+      "The model generating and reviewing line-by-line changes before applying them",
+      "Comparing models"
+    ],
+    "correctIndex": 2,
+    "explanation": "Precise diffing reduces errors and prevents the model from overwriting unrelated code."
+  },
+  {
+    "id": "d3_q33",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Can Claude Code perform 'Log Analysis'?",
+    "options": [
+      "Yes, by reading log files and correlating errors with code",
+      "Only for errors",
+      "Only for web logs",
+      "No"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cross-referencing runtime behavior with source code is a powerful agentic skill."
+  },
+  {
+    "id": "d3_q34",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "Why is CLAUDE.md usually kept small?",
+    "options": [
+      "Because it's hard to write",
+      "Model can't read long files",
+      "To save disk space",
+      "To avoid consuming too much of the model's context window"
+    ],
+    "correctIndex": 3,
+    "explanation": "High-density information is better for agentic efficiency."
+  },
+  {
+    "id": "d3_q35",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What is 'Agentic Unit Testing'?",
+    "options": [
+      "Testing the model",
+      "The agent writing and running tests for the code it just modified",
+      "Testing the API",
+      "Manual testing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Self-testing is a core loop in reliable autonomous engineering tools."
+  },
+  {
+    "id": "d3_q36",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "How do you 'Stop' a long-running Claude Code task?",
+    "options": [
+      "Ask it to stop",
+      "Delete the app",
+      "Ctrl+C in the terminal",
+      "Turn off computer"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard terminal signals provide the ultimate control over agent actions."
+  },
+  {
+    "id": "d3_q37",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "Is Claude Code available for VS Code?",
+    "options": [
+      "Yes, as part of various agentic extensions or CLI integrations",
+      "No",
+      "Only for Vim",
+      "Only for Notepad"
+    ],
+    "correctIndex": 0,
+    "explanation": "While primarily a CLI, it is being integrated into many IDE environments."
+  },
+  {
+    "id": "d3_q38",
+    "domainId": 3,
+    "difficulty": "HARD",
+    "text": "What is 'Architecture Mapping' in Claude Code?",
+    "options": [
+      "The agent's ability to understand and describe high-level system dependencies",
+      "Building a house",
+      "Drawing a picture",
+      "Model training"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reasoning allows agents to see the 'big picture' of a codebase, not just individual files."
+  },
+  {
+    "id": "d3_q39",
+    "domainId": 3,
+    "difficulty": "MEDIUM",
+    "text": "Can Claude Code 'Refactor for Performance'?",
+    "options": [
+      "Yes, by identifying bottlenecks and applying optimization patterns",
+      "Only for speed",
+      "Only for memory",
+      "No"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agents can apply common performance engineering patterns across a project."
+  },
+  {
+    "id": "d3_q40",
+    "domainId": 3,
+    "difficulty": "EASY",
+    "text": "What is the primary goal of the 'Claude Certified Architect' exam?",
+    "options": [
+      "To test coding speed",
+      "To test UI design",
+      "To test model history",
+      "To validate proficiency in designing and building agentic systems with Claude"
+    ],
+    "correctIndex": 3,
+    "explanation": "The certification focuses on high-level architectural design for AI-native apps."
+  },
+  {
+    "id": "d4_q1",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Chain-of-Thought' (CoT) prompting?",
+    "options": [
+      "List of prompts",
+      "Faster model",
+      "Forcing model to reason step-by-step before answering",
+      "Hiding thoughts"
+    ],
+    "correctIndex": 2,
+    "explanation": "CoT improves accuracy on complex tasks by exposing intermediate logic."
+  },
+  {
+    "id": "d4_q2",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Which technique ensures 100% valid JSON?",
+    "options": [
+      "Tool-use (Function Calling)",
+      "Uppercase text",
+      "Asking nicely",
+      "Disclaimers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tool-use constrains output to a schema via internal sampling logic."
+  },
+  {
+    "id": "d4_q3",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Few-Shot' prompting?",
+    "options": [
+      "Providing 1-5 examples in the prompt",
+      "Few tokens",
+      "Zero examples",
+      "Short words"
+    ],
+    "correctIndex": 0,
+    "explanation": "Examples provide the pattern for the model to follow."
+  },
+  {
+    "id": "d4_q4",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is the risk of 'String-based' prompt templates for JSON?",
+    "options": [
+      "Compatibility",
+      "API cost",
+      "Schema drift and formatting errors (trailing commas)",
+      "Latency"
+    ],
+    "correctIndex": 2,
+    "explanation": "Raw text generation lacks structural safety guarantees."
+  },
+  {
+    "id": "d4_q5",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Most effective technique for reducing 'Hallucination'?",
+    "options": [
+      "Higher temperature",
+      "Short window",
+      "Chain-of-Thought (CoT)",
+      "Removing system prompt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Explicit reasoning steps significantly reduce logical errors."
+  },
+  {
+    "id": "d4_q6",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "Best strategy for specific XML output?",
+    "options": [
+      "PDF attachment",
+      "Few-shot examples with the exact schema",
+      "Ask nicely",
+      "Be careful prompt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pattern matching from examples is highly reliable for formatting."
+  },
+  {
+    "id": "d4_q7",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'System Prompt Leakage'?",
+    "options": [
+      "Memory loss",
+      "Deleting prompt",
+      "User tricking model into revealing internal instructions",
+      "Model too slow"
+    ],
+    "correctIndex": 2,
+    "explanation": "Leaking instructions is a security risk for proprietary agent design."
+  },
+  {
+    "id": "d4_q8",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Technique for Categorization with 100+ labels?",
+    "options": [
+      "Structured list with definitions and few-shot examples",
+      "User choice",
+      "Random labels",
+      "Long sentence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Definitions help the model discriminate between fine-grained labels."
+  },
+  {
+    "id": "d4_q9",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Prompt Injection'?",
+    "options": [
+      "Speed increase",
+      "DB query",
+      "Adversarial attack where input overwrites system instructions",
+      "Token saving"
+    ],
+    "correctIndex": 2,
+    "explanation": "Injection bypasses developer-set safety and operational boundaries."
+  },
+  {
+    "id": "d4_q10",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "How does 'Metaprompting' help?",
+    "options": [
+      "Using a model to generate/optimize prompts for other agents",
+      "More models",
+      "Bypass API",
+      "Smaller model"
+    ],
+    "correctIndex": 0,
+    "explanation": "LLMs can act as high-level instruction designers for sub-agents."
+  },
+  {
+    "id": "d4_q11",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "Benefit of XML Tags in Claude prompts?",
+    "options": [
+      "Required by API",
+      "Provide clear structural boundaries Claude is optimized to follow",
+      "Reduce tokens",
+      "Look pretty"
+    ],
+    "correctIndex": 1,
+    "explanation": "Claude parses XML-delimited instructions with high precision."
+  },
+  {
+    "id": "d4_q12",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Zero-Shot' prompting?",
+    "options": [
+      "One example",
+      "Asking model to perform task without any prior examples",
+      "Never works",
+      "Zero tokens"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relies entirely on internal model capability."
+  },
+  {
+    "id": "d4_q13",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Why use 'Reasoning Tokens' (thinking) in Claude 3.7?",
+    "options": [
+      "Increase cost",
+      "Slow response",
+      "Allow exploration of multiple paths and self-correction before output",
+      "Larger font"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thinking steps increase accuracy on complex logical tasks."
+  },
+  {
+    "id": "d4_q14",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Negative Constraint'?",
+    "options": [
+      "Error",
+      "Angry prompt",
+      "Explicitly telling model what NOT to do",
+      "Low temp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Negative constraints help prevent undesired outputs."
+  },
+  {
+    "id": "d4_q15",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Dynamic Few-Shot' selection?",
+    "options": [
+      "Deleting examples",
+      "Static examples",
+      "Retrieving most relevant examples based on specific query",
+      "Model chooses weights"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relevance increases performance for varied, complex inputs."
+  },
+  {
+    "id": "d4_q16",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Temperature' in LLM sampling?",
+    "options": [
+      "Inference speed",
+      "CPU heat",
+      "Token limit",
+      "A parameter controlling the randomness and creativity of output"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lower temperature is more deterministic; higher is more creative."
+  },
+  {
+    "id": "d4_q17",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Top-P' (Nucleus Sampling)?",
+    "options": [
+      "A technique that limits word choice to the most likely cumulative percentage",
+      "A brand of model",
+      "Token cost",
+      "A prompt type"
+    ],
+    "correctIndex": 0,
+    "explanation": "Top-P is another way to control diversity and stability in model responses."
+  },
+  {
+    "id": "d4_q18",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Prompt Versioning'?",
+    "options": [
+      "Rewriting the prompt",
+      "Tracking changes to prompts in Git and testing their impact on output quality",
+      "Model versioning",
+      "Zero versioning"
+    ],
+    "correctIndex": 1,
+    "explanation": "Prompts are code and should be managed with standard engineering rigor."
+  },
+  {
+    "id": "d4_q19",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Why is 'Context Injection' better than 'Retraining' for knowledge updates?",
+    "options": [
+      "It isn't better",
+      "Cheaper and faster",
+      " Retraining is the only way",
+      " Retraining is easier"
+    ],
+    "correctIndex": 1,
+    "explanation": "Injection (RAG) allows for real-time information access without expensive compute."
+  },
+  {
+    "id": "d4_q20",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is a 'Stop Sequence'?",
+    "options": [
+      "End of a movie",
+      "Model crash",
+      "User message",
+      "A string that tells the model to immediately cease generating tokens"
+    ],
+    "correctIndex": 3,
+    "explanation": "Stop sequences prevent models from generating unnecessary text after a task is done."
+  },
+  {
+    "id": "d4_q21",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "How do you 'Prefill' a response to force a specific style?",
+    "options": [
+      "Providing the start of the model's response in the API call",
+      "Ask for it",
+      "Longer system prompt",
+      "Higher temp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prefilling 'guarantees' the first tokens of the response, steering the rest."
+  },
+  {
+    "id": "d4_q22",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Constitutional AI' in the context of prompting?",
+    "options": [
+      "Model architecture",
+      "Laws for AI",
+      "Training data",
+      "Providing a set of principles that the model uses to critique and revise its own output"
+    ],
+    "correctIndex": 3,
+    "explanation": "Constitutional prompting aligns model behavior with specific safety or style values."
+  },
+  {
+    "id": "d4_q23",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Prompt Sensitivity'?",
+    "options": [
+      "User emotion",
+      "Sensitive data",
+      "How much a small change in wording affects the model's output quality",
+      "Model getting angry"
+    ],
+    "correctIndex": 2,
+    "explanation": "Robust prompts should produce stable results across slight variations."
+  },
+  {
+    "id": "d4_q24",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Iterative Refinement'?",
+    "options": [
+      "Rewriting once",
+      "Developing prompts through a loop of testing, observing, and adjusting",
+      "Random choice",
+      "Zero shots"
+    ],
+    "correctIndex": 1,
+    "explanation": "Prompt engineering is an experimental science that requires iteration."
+  },
+  {
+    "id": "d4_q25",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Prompt Decomposition'?",
+    "options": [
+      "Breaking a large, complex instruction into smaller, manageable sub-prompts",
+      "Longer prompt",
+      "Deleting the prompt",
+      "Single-turn only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decomposition reduces cognitive load on the model and increases success rates."
+  },
+  {
+    "id": "d4_q26",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "Why is 'Markdown' preferred for data in prompts?",
+    "options": [
+      "It's encrypted",
+      "It's pretty",
+      "It provides clear structural markers that models parse easily",
+      "It uses fewer tokens"
+    ],
+    "correctIndex": 2,
+    "explanation": "Structural clarity helps the model distinguish between instructions and data."
+  },
+  {
+    "id": "d4_q27",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is the 'System' role vs. 'User' role in API calls?",
+    "options": [
+      "System is for models",
+      "System defines rules; User provides the specific task/data",
+      "User is for models",
+      "No difference"
+    ],
+    "correctIndex": 1,
+    "explanation": "Role separation allows for persistent instruction across many user messages."
+  },
+  {
+    "id": "d4_q28",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Output Schema Enforcement'?",
+    "options": [
+      "Asking for JSON",
+      "Formatting after the fact",
+      "Using tools or specific API features to ensure output matches a defined format",
+      "Manual check"
+    ],
+    "correctIndex": 2,
+    "explanation": "Enforcement is critical for integrating LLM output into downstream code."
+  },
+  {
+    "id": "d4_q29",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Prompt Optimization'?",
+    "options": [
+      "Zero shots",
+      "Deleting words",
+      "Techniques like A/B testing and algorithmic tuning to find the most effective prompt",
+      "Faster model"
+    ],
+    "correctIndex": 2,
+    "explanation": "Optimization ensures the best price-performance ratio for an application."
+  },
+  {
+    "id": "d4_q30",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What is 'Persona Prompting'?",
+    "options": [
+      "Talking to yourself",
+      "User login",
+      "Model name",
+      "Giving the model a specific role or identity to adopt (e.g. 'You are a senior dev')"
+    ],
+    "correctIndex": 3,
+    "explanation": "Personas guide the tone, style, and depth of the model's reasoning."
+  },
+  {
+    "id": "d4_q31",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "How do you handle 'Ambiguity' in user prompts?",
+    "options": [
+      "Guess",
+      "Instruct the model to ask clarifying questions before proceeding",
+      "Give a random answer",
+      "Ignore it"
+    ],
+    "correctIndex": 1,
+    "explanation": "Interactive clarification is a hallmark of high-quality agentic design."
+  },
+  {
+    "id": "d4_q32",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Soft Prompting'?",
+    "options": [
+      "Gentle instructions",
+      "Short prompts",
+      "Easy prompts",
+      "A fine-tuning technique where learnable vectors are added to the input"
+    ],
+    "correctIndex": 3,
+    "explanation": "Soft prompting is an advanced method to steer models without changing weights."
+  },
+  {
+    "id": "d4_q33",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Golden Dataset'?",
+    "options": [
+      "Expensive data",
+      "User data",
+      "A curated set of inputs and ideal outputs used to evaluate prompt quality",
+      "Random data"
+    ],
+    "correctIndex": 2,
+    "explanation": "Golden sets are the baseline for measuring improvement in prompt engineering."
+  },
+  {
+    "id": "d4_q34",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "Why limit 'Max Tokens' in production?",
+    "options": [
+      "Control costs and prevent run-away generation from bugs",
+      "Security only",
+      "Save disk space",
+      "Make model faster"
+    ],
+    "correctIndex": 0,
+    "explanation": "Max tokens is a primary financial guardrail for LLM apps."
+  },
+  {
+    "id": "d4_q35",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Self-Consistency' prompting?",
+    "options": [
+      "One-shot only",
+      "Zero shots",
+      "Always the same",
+      "Generating multiple paths and selecting the most frequent or agreed-upon answer"
+    ],
+    "correctIndex": 3,
+    "explanation": "Consensus across multiple runs significantly improves accuracy on logical tasks."
+  },
+  {
+    "id": "d4_q36",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is the 'Length Bias' in LLMs?",
+    "options": [
+      "Model speed",
+      "Short words",
+      "A tendency for models to prefer longer responses as more likely correct",
+      "Models liking tall users"
+    ],
+    "correctIndex": 2,
+    "explanation": "Recognizing bias helps developers write better evaluation criteria."
+  },
+  {
+    "id": "d4_q37",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "What are 'Delimiters' in prompts?",
+    "options": [
+      "Punctuation",
+      "Errors",
+      "Special characters like ### or --- used to separate sections of text",
+      "Stop words"
+    ],
+    "correctIndex": 2,
+    "explanation": "Delimiters provide structural context that helps models parse complex instructions."
+  },
+  {
+    "id": "d4_q38",
+    "domainId": 4,
+    "difficulty": "HARD",
+    "text": "What is 'Negative Few-Shot' prompting?",
+    "options": [
+      "Angry examples",
+      "No examples",
+      "Providing examples of what NOT to do along with the correct patterns",
+      "One example"
+    ],
+    "correctIndex": 2,
+    "explanation": "Negative examples are powerful for steering models away from common errors."
+  },
+  {
+    "id": "d4_q39",
+    "domainId": 4,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Prompt Compression'?",
+    "options": [
+      "Deleting prompts",
+      "Removing redundant tokens from a prompt while preserving its meaning",
+      "Smaller font",
+      "Zipping a file"
+    ],
+    "correctIndex": 1,
+    "explanation": "Compression saves cost and leaves more room in the context window."
+  },
+  {
+    "id": "d4_q40",
+    "domainId": 4,
+    "difficulty": "EASY",
+    "text": "Why is 'Clarity' more important than 'Politeness' in prompts?",
+    "options": [
+      "Politeness uses too many tokens",
+      "Models don't speak English",
+      "Models are mean",
+      "Ambiguous instructions lead to inconsistent results; clear logic is the priority"
+    ],
+    "correctIndex": 3,
+    "explanation": "LLMs respond to structural logic, not social niceties."
+  },
+  {
+    "id": "d5_q1",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Prompt Caching'?",
+    "options": [
+      "Browser feature",
+      "Hide data",
+      "Deleting prompts",
+      "Storing frequent context to save cost and latency"
+    ],
+    "correctIndex": 3,
+    "explanation": "Caching avoids redundant token processing for repeated context."
+  },
+  {
+    "id": "d5_q2",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Context Window'?",
+    "options": [
+      "Database type",
+      "Hardware token limit for current session",
+      "Model name",
+      "Screen size"
+    ],
+    "correctIndex": 1,
+    "explanation": "The buffer for the current conversation history."
+  },
+  {
+    "id": "d5_q3",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What does RAG stand for?",
+    "options": [
+      "Retrieval-Augmented Generation",
+      "Remote Agent Gate",
+      "Random API Generator",
+      "Read and Go"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAG injects external data into the model context."
+  },
+  {
+    "id": "d5_q4",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "Why cache 'System Prompts' in RAG?",
+    "options": [
+      "Increase precision",
+      "Not supported",
+      "Reduce cost of redundant tokens sent every query",
+      "Faster DB search"
+    ],
+    "correctIndex": 2,
+    "explanation": "System prompts repeat in every turn, making them ideal for caching."
+  },
+  {
+    "id": "d5_q5",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What happens if you exceed Claude 3.5 token limit?",
+    "options": [
+      "API returns 400 Overloaded error",
+      "Oldest dropped",
+      "Auto compress",
+      "Ignore system prompt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Anthropic requires application-level context management."
+  },
+  {
+    "id": "d5_q6",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "Why is 'Prefilling' response (e.g. '{') powerful for JSON?",
+    "options": [
+      "Security only",
+      "Faster API",
+      "Bypass system prompt",
+      "Forces 'JSON mode' and prevents conversational filler"
+    ],
+    "correctIndex": 3,
+    "explanation": "Prefilling guides the model's sampling logic immediately."
+  },
+  {
+    "id": "d5_q7",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Time to First Token' (TTFT) and Prompt Caching impact?",
+    "options": [
+      "Total time",
+      "Upload time",
+      "Tokenization time",
+      "Latency before generation; caching reduces this by skipping re-processing"
+    ],
+    "correctIndex": 3,
+    "explanation": "Caching makes the model start responding much faster."
+  },
+  {
+    "id": "d5_q8",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "Cost of 'Cache Hits'?",
+    "options": [
+      "Higher cost",
+      "Based on file size",
+      "Free",
+      "Lower cost than standard processing"
+    ],
+    "correctIndex": 3,
+    "explanation": "Caching is a primary mechanism for scaling LLM apps economically."
+  },
+  {
+    "id": "d5_q9",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Maximum Output Tokens'?",
+    "options": [
+      "Hard limit on length of model's generated response",
+      "Number of users",
+      "Model speed",
+      "Internet size"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ensures responses stay within expected length boundaries."
+  },
+  {
+    "id": "d5_q10",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "In RAG, what is 'Chunking'?",
+    "options": [
+      "Combining files",
+      "Network error",
+      "Breaking docs into smaller segments for better search precision",
+      "Deleting data"
+    ],
+    "correctIndex": 2,
+    "explanation": "Proper chunking provides precise context for retrieval."
+  },
+  {
+    "id": "d5_q11",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Vector Embedding'?",
+    "options": [
+      "Font type",
+      "Prompt type",
+      "Image compression",
+      "Numerical representation of text capturing semantic meaning"
+    ],
+    "correctIndex": 3,
+    "explanation": "Embeddings enable search by 'meaning' instead of keywords."
+  },
+  {
+    "id": "d5_q12",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is 'Contextual RAG'?",
+    "options": [
+      "Mobile RAG",
+      "One file RAG",
+      "RAG without DB",
+      "Adding context or summaries to chunks before embedding"
+    ],
+    "correctIndex": 3,
+    "explanation": "Prevents semantic loss in individual document snippets."
+  },
+  {
+    "id": "d5_q13",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "Why is 'Latency' higher for larger models?",
+    "options": [
+      "More parameters to process for every token",
+      "More electricity",
+      "Fewer users",
+      "Further away"
+    ],
+    "correctIndex": 0,
+    "explanation": "Architectural complexity directly increases compute time."
+  },
+  {
+    "id": "d5_q14",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Lost in the Middle'?",
+    "options": [
+      "Model forgetting info in the center of long prompts",
+      "Forgotten password",
+      "User lost",
+      "Network bug"
+    ],
+    "correctIndex": 0,
+    "explanation": "Attention mechanism favors tokens at boundaries."
+  },
+  {
+    "id": "d5_q15",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "How does 'Context Pruning' help?",
+    "options": [
+      "Shut down server",
+      "More tokens",
+      "Smarter model",
+      "Removes irrelevant history to stay in window"
+    ],
+    "correctIndex": 3,
+    "explanation": "Focuses model on most recent and relevant data."
+  },
+  {
+    "id": "d5_q16",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Tokenization'?",
+    "options": [
+      "Model training",
+      "Sending an API request",
+      "Encrypting text",
+      "The process of breaking text into numerical IDs for processing"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tokenization is the bridge between human language and model math."
+  },
+  {
+    "id": "d5_q17",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Inference'?",
+    "options": [
+      "The process of a model generating a response from an input",
+      "A type of database",
+      "Deleting data",
+      "Training a model"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inference is the 'thinking' phase of the model at runtime."
+  },
+  {
+    "id": "d5_q18",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is a 'Sliding Window' context manager?",
+    "options": [
+      "A strategy that drops the oldest tokens while keeping system prompts and recent turns",
+      "Zero history",
+      "Infinite history",
+      "A UI feature"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sliding windows manage the context limit by prioritizing recent information."
+  },
+  {
+    "id": "d5_q19",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "Why use 'Summarization' for long-running sessions?",
+    "options": [
+      "To save disk space",
+      "To condense past conversation into a few tokens while preserving key facts",
+      "To make it faster",
+      "To make it prettier"
+    ],
+    "correctIndex": 1,
+    "explanation": "Summarization allows sessions to outlive the raw token limit of the context window."
+  },
+  {
+    "id": "d5_q20",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Reliability' in agentic systems?",
+    "options": [
+      "Model speed",
+      "The probability that the system performs its intended function without failure",
+      "Internet uptime",
+      "Cost per token"
+    ],
+    "correctIndex": 1,
+    "explanation": "Reliability is built through robust error handling, verification, and grounding."
+  },
+  {
+    "id": "d5_q21",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is 'Semantic Chunking'?",
+    "options": [
+      "Breaking text at word counts",
+      "Deleting text",
+      "Random breaking",
+      "Breaking text based on changes in meaning or topic rather than fixed lengths"
+    ],
+    "correctIndex": 3,
+    "explanation": "Semantic boundaries improve the quality of retrieved context in RAG."
+  },
+  {
+    "id": "d5_q22",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is a 'Retriever' in RAG?",
+    "options": [
+      "A type of dog",
+      "The model itself",
+      "The component that searches the database for relevant documents",
+      "A UI feature"
+    ],
+    "correctIndex": 2,
+    "explanation": "Retrievers find the 'needle' in the data haystack to help the model reason."
+  },
+  {
+    "id": "d5_q23",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "Why use 'Multiple Models' in one application?",
+    "options": [
+      "To use the best tool for each sub-task (e.g. Haiku for summary, Sonnet for code)",
+      "It's required",
+      "To make it more complex",
+      "To spend more money"
+    ],
+    "correctIndex": 0,
+    "explanation": "Model routing optimizes for cost, speed, and accuracy simultaneously."
+  },
+  {
+    "id": "d5_q24",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is 'Knowledge Graph' RAG?",
+    "options": [
+      "RAG with pictures",
+      "RAG on a website",
+      "Using structured relationship data instead of just raw text chunks for retrieval",
+      "Zero RAG"
+    ],
+    "correctIndex": 2,
+    "explanation": "Graphs allow models to understand complex connections between disparate pieces of info."
+  },
+  {
+    "id": "d5_q25",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Prompt Caching' TTL (Time to Live)?",
+    "options": [
+      "Total tokens",
+      "How fast it is",
+      "The duration for which a cached prompt remains available before being evicted",
+      "Zero"
+    ],
+    "correctIndex": 2,
+    "explanation": "Understanding TTL helps optimize cache hit rates and costs."
+  },
+  {
+    "id": "d5_q26",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Graceful Degradation'?",
+    "options": [
+      "The system's ability to maintain partial functionality when some components (like a tool) fail",
+      "Deleting data",
+      "Updating the app",
+      "Model crashing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reliable apps don't fail completely if one non-critical part breaks."
+  },
+  {
+    "id": "d5_q27",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is 'Hybrid Search' in RAG?",
+    "options": [
+      "Combining keyword-based (BM25) and semantic (vector) search for better accuracy",
+      "Searching the web",
+      "Searching twice",
+      "Model training"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hybrid search covers the weaknesses of both keyword and semantic retrieval."
+  },
+  {
+    "id": "d5_q28",
+    "domainId": 5,
+    "difficulty": "MEDIUM",
+    "text": "What is 'Cold Start' in LLM applications?",
+    "options": [
+      "Winter weather",
+      "User logout",
+      "The latency of the first request when a system has no cached context",
+      "Model training"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cold starts are more expensive and slower, making caching valuable for repeat users."
+  },
+  {
+    "id": "d5_q29",
+    "domainId": 5,
+    "difficulty": "EASY",
+    "text": "What is 'Throughput' in an AI system?",
+    "options": [
+      "Model size",
+      "The number of tokens or requests processed per unit of time",
+      "Price",
+      "Latency"
+    ],
+    "correctIndex": 1,
+    "explanation": "High throughput is necessary for scaling to many concurrent users."
+  },
+  {
+    "id": "d5_q30",
+    "domainId": 5,
+    "difficulty": "HARD",
+    "text": "What is 'Context Distillation'?",
+    "options": [
+      "Zero context",
+      "Model training",
+      "Making it smaller",
+      "A process of extracting the most relevant information from a large context to create a smaller, focused prompt"
+    ],
+    "correctIndex": 3,
+    "explanation": "Distillation keeps models focused and saves costs by reducing noise."
+  }
+]

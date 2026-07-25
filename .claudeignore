@@ -1,0 +1,9 @@
+build/
+.gradle/
+.idea/
+*.apk
+*.aab
+*.class
+*.dex
+node_modules/
+*.log

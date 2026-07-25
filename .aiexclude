@@ -1,0 +1,30 @@
+# .aiexclude — keep build artifacts and generated junk out of AI context
+
+# Build outputs
+*/build/
+.gradle/
+*/.cxx/
+captures/
+.externalNativeBuild/
+
+# Generated/binary
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+local.properties
+
+# Large generated resources
+app/src/main/res/raw/*.json
+!app/src/main/assets/questions_v1.json
+# (keep your actual content file visible, exclude any large dumped/cached ones)
+
+# IDE noise
+.idea/
+*.iml
+.DS_Store
+
+# Logs
+*.log

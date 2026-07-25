@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cs_bank_1",
+    "title": "Global Banking Multi-Agent Orchestration",
+    "context": "You are designing a high-reliability multi-agent system for a global investment bank. The system must process complex financial queries by routing tasks between specialized agents: a 'Portfolio Analyst', a 'Risk Auditor', and a 'Compliance Validator'. The bank requires strict JSON auditing and a human-in-the-loop (HITL) gate for any transaction exceeding $1M.",
+    "domainId": 1
+  },
+  {
+    "id": "cs_mcp_1",
+    "title": "Legacy ERP System Integration via MCP",
+    "context": "A manufacturing client wants to use Claude to query their 20-year-old COBOL-based ERP. You are tasked with designing an MCP server that bridges Claude to this legacy system. The server must handle slow response times, provide read-only access to inventory logs, and allow 'Production Managers' to update stock levels via a verified tool call.",
+    "domainId": 2
+  },
+  {
+    "id": "cs_code_1",
+    "title": "Automated Migration to Microservices",
+    "context": "You are using Claude Code to lead a team through a massive migration from a monolithic Java monolith to a distributed Kotlin microservices architecture. You must configure the project's CLAUDE.md to enforce strict architectural boundaries, handle cross-service dependency resolution, and automate the generation of Boilerplate code following the team's custom DDD (Domain-Driven Design) templates.",
+    "domainId": 3
+  },
+  {
+    "id": "cs_prompt_1",
+    "title": "Strict Regulatory Document Extraction",
+    "context": "A legal firm needs to extract precisely 45 distinct metadata fields from varying 100-page insurance contracts. The output must be 100% valid JSON following a strict regulatory schema. Performance must be optimized for cost and latency, as they process 10,000 documents per week.",
+    "domainId": 4
+  }
+]
