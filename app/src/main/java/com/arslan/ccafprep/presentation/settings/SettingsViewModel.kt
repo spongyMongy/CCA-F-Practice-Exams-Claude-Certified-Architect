@@ -37,10 +37,6 @@ class SettingsViewModel @Inject constructor(
         settingsManager.setBackgroundStyle(style)
     }
 
-    fun togglePro(unlocked: Boolean) = viewModelScope.launch {
-        settingsManager.setProUnlocked(unlocked)
-    }
-
     fun setShowTimer(show: Boolean) = viewModelScope.launch {
         settingsManager.setShowTimer(show)
     }

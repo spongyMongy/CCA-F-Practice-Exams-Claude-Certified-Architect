@@ -6,7 +6,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.PlayArrow
-import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -188,7 +187,7 @@ fun DomainsTab(
             ) {
                 Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text(domain.title, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
-                    if (isLocked) Icon(Icons.Default.Warning, contentDescription = null, tint = MaterialTheme.colorScheme.error)
+                    if (isLocked) PremiumBadge()
                     else Icon(Icons.Default.PlayArrow, contentDescription = null)
                 }
             }

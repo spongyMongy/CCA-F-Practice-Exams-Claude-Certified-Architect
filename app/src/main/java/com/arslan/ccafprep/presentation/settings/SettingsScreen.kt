@@ -55,16 +55,29 @@ fun SettingsScreen(
 
             items(AppTheme.entries) { theme ->
                 val isSelected = uiState.theme == theme
+                val isLocked = !uiState.isPro && theme != AppTheme.DEFAULT
+                
                 OutlinedCard(
-                    onClick = { viewModel.setTheme(theme) },
+                    onClick = { if (!isLocked) viewModel.setTheme(theme) else onOpenPaywall() },
                     modifier = Modifier.fillMaxWidth(),
                     colors = CardDefaults.outlinedCardColors(
                         containerColor = if (isSelected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface
                     )
                 ) {
-                    Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                        Text(theme.displayName, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
-                        if (isSelected) RadioButton(selected = true, onClick = null)
+                    Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            theme.displayName, 
+                            style = MaterialTheme.typography.titleMedium, 
+                            modifier = Modifier.weight(1f),
+                            color = if (isLocked) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface
+                        )
+                        if (isLocked) {
+                            Icon(Icons.Default.Lock, contentDescription = null, tint = MaterialTheme.colorScheme.outline, modifier = Modifier.size(20.dp))
+                            Spacer(Modifier.width(8.dp))
+                            PremiumBadge()
+                        } else if (isSelected) {
+                            RadioButton(selected = true, onClick = null)
+                        }
                     }
                 }
             }
@@ -74,7 +87,7 @@ fun SettingsScreen(
             }
 
             items(BackgroundStyle.entries) { style ->
-                val isLocked = !uiState.isPro && (style == BackgroundStyle.MESH || style == BackgroundStyle.GRID)
+                val isLocked = !uiState.isPro && (style == BackgroundStyle.MESH || style == BackgroundStyle.GRID || style == BackgroundStyle.GRADIENT)
                 val isSelected = uiState.background == style
                 
                 Surface(
@@ -82,13 +95,21 @@ fun SettingsScreen(
                     modifier = Modifier.fillMaxWidth(),
                     color = Color.Transparent 
                 ) {
-                    Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                         Text(
                             style.displayName, 
                             color = if (isLocked) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface,
                             style = if (isSelected) MaterialTheme.typography.titleMedium else MaterialTheme.typography.bodyLarge
                         )
-                        if (isLocked) PremiumBadge() else if (isSelected) Icon(Icons.Default.Check, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                        if (isLocked) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(Icons.Default.Lock, contentDescription = null, tint = MaterialTheme.colorScheme.outline, modifier = Modifier.size(16.dp))
+                                Spacer(Modifier.width(8.dp))
+                                PremiumBadge()
+                            }
+                        } else if (isSelected) {
+                            Icon(Icons.Default.Check, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                        }
                     }
                 }
             }
@@ -100,20 +121,58 @@ fun SettingsScreen(
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Column(Modifier.padding(16.dp)) {
-                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                            Column(Modifier.weight(1f)) {
-                                Text("Show Timer", style = MaterialTheme.typography.labelLarge)
-                                Text("Track session duration", style = MaterialTheme.typography.bodySmall)
+                        Surface(
+                            onClick = { if (uiState.isPro) viewModel.setShowTimer(!uiState.showTimer) else onOpenPaywall() },
+                            color = Color.Transparent
+                        ) {
+                            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                                Column(Modifier.weight(1f)) {
+                                    Text(
+                                        "Show Timer", 
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = if (!uiState.isPro) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface
+                                    )
+                                    Text("Track session duration", style = MaterialTheme.typography.bodySmall)
+                                }
+                                if (!uiState.isPro) {
+                                    Icon(Icons.Default.Lock, contentDescription = null, tint = MaterialTheme.colorScheme.outline, modifier = Modifier.size(20.dp))
+                                    Spacer(Modifier.width(8.dp))
+                                    PremiumBadge()
+                                }
+                                Switch(
+                                    checked = uiState.showTimer, 
+                                    onCheckedChange = { if (uiState.isPro) viewModel.setShowTimer(it) else onOpenPaywall() },
+                                    enabled = uiState.isPro
+                                )
                             }
-                            Switch(checked = uiState.showTimer, onCheckedChange = { viewModel.setShowTimer(it) })
                         }
+                        
                         Spacer(Modifier.height(12.dp))
-                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                            Column(Modifier.weight(1f)) {
-                                Text("Immediate Feedback", style = MaterialTheme.typography.labelLarge)
-                                Text("Show answers per question", style = MaterialTheme.typography.bodySmall)
+                        
+                        Surface(
+                            onClick = { if (uiState.isPro) viewModel.setImmediateFeedback(!uiState.immediateFeedback) else onOpenPaywall() },
+                            color = Color.Transparent
+                        ) {
+                            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                                Column(Modifier.weight(1f)) {
+                                    Text(
+                                        "Immediate Feedback", 
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = if (!uiState.isPro) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface
+                                    )
+                                    Text("Show answers per question", style = MaterialTheme.typography.bodySmall)
+                                }
+                                if (!uiState.isPro) {
+                                    Icon(Icons.Default.Lock, contentDescription = null, tint = MaterialTheme.colorScheme.outline, modifier = Modifier.size(20.dp))
+                                    Spacer(Modifier.width(8.dp))
+                                    PremiumBadge()
+                                }
+                                Switch(
+                                    checked = uiState.immediateFeedback, 
+                                    onCheckedChange = { if (uiState.isPro) viewModel.setImmediateFeedback(it) else onOpenPaywall() },
+                                    enabled = uiState.isPro
+                                )
                             }
-                            Switch(checked = uiState.immediateFeedback, onCheckedChange = { viewModel.setImmediateFeedback(it) })
                         }
                     }
                 }

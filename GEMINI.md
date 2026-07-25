@@ -65,7 +65,7 @@ com.arslan.ccafprep/
 - [x] Phase 5 — Content seeding (150–250 original questions)
 - [x] Phase 6 — Progress dashboard
 - [x] Phase 7 — Play Billing one-time purchase
-- [x] Phase 8 — Final Polish & Compliance Verification (Mocks & Debug Toggles Removed)
+- [x] Phase 8 — Final Polish & Compliance Verification (Mocks, Debug Toggles, & Inconsistencies Removed)
 - [x] Phase 9 — Deployment Ready (Privacy Policy Hosted & Linked)
 
 ## What NOT to do
