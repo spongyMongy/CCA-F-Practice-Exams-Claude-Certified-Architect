@@ -45,6 +45,10 @@ class SettingsViewModel @Inject constructor(
         settingsManager.setImmediateFeedback(immediate)
     }
 
+    fun togglePro() = viewModelScope.launch {
+        settingsManager.setProUnlocked(!uiState.value.isPro)
+    }
+
     fun forceSync() = viewModelScope.launch {
         settingsManager.setSeeded(false)
         seeder.seedIfNeeded()

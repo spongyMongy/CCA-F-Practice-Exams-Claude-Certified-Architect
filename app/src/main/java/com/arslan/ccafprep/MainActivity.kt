@@ -37,12 +37,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        lifecycleScope.launch {
-            settingsManager.setProUnlocked(true)
-            settingsManager.setTheme(AppTheme.SUNSET)
-            settingsManager.setBackgroundStyle(BackgroundStyle.MESH)
-        }
-
         setContent {
             val theme by settingsManager.selectedTheme.collectAsState(initial = AppTheme.DEFAULT)
             val bgStyle by settingsManager.backgroundStyle.collectAsState(initial = BackgroundStyle.NONE)

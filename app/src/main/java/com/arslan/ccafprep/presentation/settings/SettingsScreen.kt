@@ -203,6 +203,36 @@ fun SettingsScreen(
             }
 
             item {
+                SectionHeader("Developer Options")
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.1f)),
+                    modifier = Modifier.fillMaxWidth(),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, MaterialTheme.colorScheme.error.copy(alpha = 0.3f))
+                ) {
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        Button(
+                            onClick = { viewModel.togglePro() },
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                        ) {
+                            Icon(Icons.Default.Star, contentDescription = null)
+                            Spacer(Modifier.width(8.dp))
+                            Text(if (uiState.isPro) "LOCK PRO FEATURES" else "UNLOCK PRO FEATURES")
+                        }
+
+                        OutlinedButton(
+                            onClick = { viewModel.forceSync() },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Icon(Icons.Default.Refresh, contentDescription = null)
+                            Spacer(Modifier.width(8.dp))
+                            Text("FORCE DB RE-SEED")
+                        }
+                    }
+                }
+            }
+
+            item {
                 Spacer(Modifier.height(32.dp))
                 Text(
                     text = stringResource(R.string.disclaimer_text),

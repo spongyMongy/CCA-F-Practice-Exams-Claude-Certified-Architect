@@ -1,0 +1,4 @@
+- `[x]` Remove hardcoded debug overrides in `MainActivity.kt`
+- `[x]` Add `togglePro()` to `SettingsViewModel.kt`
+- `[x]` Add "Developer Options" section to `SettingsScreen.kt`
+- `[x]` Verify debug options functionality
