@@ -15,7 +15,12 @@ private val MidnightColorScheme = darkColorScheme(
     primary = MidnightSecondary,
     secondary = MidnightAccent,
     background = Color(0xFF001122), // Deep OLED Navy
-    surface = Color(0xFF001F3F)      // Dark Navy Cards
+    surface = Color(0xFF001F3F),      // Dark Navy Cards
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    onBackground = Color.White,
+    onSurface = Color.White,
+    onSurfaceVariant = Color.White
 )
 
 private val ForestColorScheme = lightColorScheme(
